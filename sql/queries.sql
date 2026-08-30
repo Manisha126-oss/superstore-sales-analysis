@@ -18,3 +18,22 @@ SELECT
 FROM Superstore
 GROUP BY Discount
 ORDER BY Discount;
+
+-- Question 3: Which regions/states are most/least profitable?
+SELECT 
+    Region,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit,
+    SUM(Profit) / SUM(Sales) * 100 AS profit_margin
+FROM Superstore
+GROUP BY Region
+ORDER BY total_profit DESC;
+
+SELECT 
+    State,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit,
+    SUM(Profit) / SUM(Sales) * 100 AS profit_margin
+FROM Superstore
+GROUP BY State
+ORDER BY total_profit DESC;
