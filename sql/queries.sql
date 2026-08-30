@@ -37,3 +37,15 @@ SELECT
 FROM Superstore
 GROUP BY State
 ORDER BY total_profit DESC;
+
+-- Question 4: Does customer segment differ in order value or profitability?
+SELECT
+    Segment,
+    COUNT(DISTINCT "Order ID") AS total_orders,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit,
+    SUM(Sales) / COUNT(DISTINCT "Order ID") AS avg_order_value,
+    SUM(Profit) / COUNT(DISTINCT "Order ID") AS avg_profit_per_order
+FROM Superstore
+GROUP BY Segment
+ORDER BY avg_order_value DESC;
