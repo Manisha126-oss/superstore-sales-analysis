@@ -39,5 +39,17 @@ high-discount transactions and consider limiting aggressive discounts,
 particularly at 30% and above, unless they serve a specific strategic 
 purpose.
 
+**Regional & state profitability (Q3):** The West region is the strongest 
+performer, generating the highest profit of ₹108,418.45 and the highest 
+regional profit margin of 14.94%. The Central region has the lowest profit 
+margin at 7.92%, though it remains profitable overall. At the state level, 
+California generates the highest total profit (₹76,381.39), while New York 
+achieves a higher profit margin (23.82%) despite lower sales — reinforcing 
+that higher sales don't necessarily mean better profitability. The analysis 
+also identifies 10 loss-making states, with Texas showing the largest 
+absolute loss (−₹25,729.36) despite ₹170,188.05 in sales; Ohio has the 
+lowest profit margin among states (−21.69%). Management should prioritize 
+profitable regions like the West while investigating loss-making states, 
+particularly Texas and Ohio, to identify drivers of negative profitability.
 ## Status
-🚧 In progress — questions 3-6 still to come.
+🚧 In progress — questions 4-6 still to come.
