@@ -49,3 +49,13 @@ SELECT
 FROM Superstore
 GROUP BY Segment
 ORDER BY avg_order_value DESC;
+
+-- Question 5: Does ship mode relate to profit?
+SELECT
+    "Ship Mode",
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit,
+    SUM(Profit) / SUM(Sales) * 100 AS profit_margin 
+FROM Superstore
+GROUP BY "Ship Mode"
+ORDER BY profit_margin DESC;
