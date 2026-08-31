@@ -75,5 +75,13 @@ profitability concern in this dataset; management should avoid assuming
 faster shipping necessarily reduces margins, and instead investigate other 
 factors like product mix or shipping costs if optimizing delivery options.
 
+**Sales & profit trends (Q6):** Sales and profit show a clear seasonal 
+pattern, with performance generally strengthening toward the end of the 
+year. November recorded the highest combined sales (₹352,461.07), while 
+December generated the highest combined profit (₹43,369.19). February had 
+the lowest combined sales (₹59,751.25). This suggests a strong September–
+December demand period and a weaker January–February period, which can 
+help inform inventory, staffing, and marketing planning.
+
 ## Status
-🚧 In progress — questions 5-6 still to come.
+✅ Complete — 6 business questions answered with SQL, all findings verified and documented.
