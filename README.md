@@ -87,7 +87,7 @@ Based on the analysis:
 
 All SQL queries used for this analysis are available in:
 
-`sql/queries.sql`
+`sql/superstore_analysis.sql`
 
 The queries demonstrate SQL-based aggregation, profitability analysis, segmentation, geographic analysis, and time-based analysis.
 
