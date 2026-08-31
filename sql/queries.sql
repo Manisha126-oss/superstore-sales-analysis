@@ -59,3 +59,24 @@ SELECT
 FROM Superstore
 GROUP BY "Ship Mode"
 ORDER BY profit_margin DESC;
+
+-- Question 6: How have sales/profit trended over time, and is there seasonality?
+SELECT
+    substr("Order Date", -4) AS year,
+    substr("Order Date", 1, instr("Order Date", '/') - 1) AS month,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM Superstore
+GROUP BY year, month
+ORDER BY year, month;
+
+SELECT
+    CAST(
+        substr("Order Date", 1, instr("Order Date", '/') - 1)
+        AS INTEGER
+    ) AS month,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM Superstore
+GROUP BY month
+ORDER BY month;
